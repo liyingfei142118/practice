@@ -12,7 +12,35 @@ typedef struct {
 } st_cmd_head;
 #pragma pack()
 
+struct A
+{
+	short e;
+	char a;
+	char b;
+	char c;
+	int d;
+}A1;
+
+struct B
+{
+	long e;
+	char a;
+	char d;
+	int b;
+	char c;
+}B1;
+
+struct C
+{	
+	char a;
+	long b;
+	double e;
+	char c;
+}C1;
 int main()
 {
-	printf("%d",sizeof(st_cmd_head));
+	printf("%d\n", sizeof(st_cmd_head));
+	printf("%d\n", sizeof(A1));
+	printf("%d\n", sizeof(B1));
+	printf("%d\n", sizeof(C1));
 }
