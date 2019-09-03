@@ -17,8 +17,23 @@ sub中如果出现'?'表示可以匹配一到三个除'\0'以外的任意字符�
 
 输出描述:
 从string开头位置完整匹配sub，匹配到的字符个数。
+输入例子1:
+abcdefg
+a?c
+
+输出例子1:
+3
+
+输入例子2:
+aabcddefg
+a?c
+
+输出例子2:
+4
+
 */
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 #define Max 10000
@@ -34,6 +49,79 @@ int main()
 	cout<<str<<endl;
 	cout<<sub<<endl;
 
-	
+	int  i = 0, j = 0;
 
+	int tkey = 0;
+	
+	for(int s = 0; s < strlen(str); s++)
+	{
+		i = s;
+		while(i < strlen(str))
+		{
+
+
+			if(sub[j] != '?')
+			{
+				if(str[i] == sub[j])
+				{
+					tkey++;
+					i++;
+					j++;	
+				}
+				else
+				{
+					tkey = 0;
+					j = 0;
+					break;
+				}			
+
+			}
+			else
+			{
+				
+				if(str[i] == sub[j+1])
+				{
+					tkey++;
+					i++;
+					j++;	
+				}
+				else
+				{
+					int t = 0;
+					while(str[i] != sub[j+1])
+					{
+						i++;
+						t++;
+						tkey++;
+					}
+					if(t >= 4)
+					{
+						tkey = 0;
+						j = 0;
+						break;
+					}
+					else
+					{
+						i++;
+						j = j+2;
+					}
+				}
+			}
+
+			if(j > strlen(sub))
+			{
+				if(key < tkey) 
+				{
+					key = tkey;
+				}
+
+				j = 0;
+				tkey = 0;
+				break;
+
+			}
+		}
+	}
+
+	cout <<"key:"<< key <<endl;
 }
