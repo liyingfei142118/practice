@@ -1,0 +1,190 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=gb18030" /><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="mon, 22 jul 2002 11:12:01 GMT"><meta http-equiv="pragma" content="no-cache"><title>QQ邮箱 - </title><style type="text/css">body {margin:0;padding:0;font:normal 12px Verdana;}.leftpanel {position:absolute;top:0;left:0;width:180px;height:100%;overflow:auto;padding:0 5px 0 8px;background:#f2f7fc;}.leftpanel ul {padding:8px 0 8px 8px;margin:0;}.leftpanel ul li {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;margin:0 0 6px 0;list-style:none;}.rightpanel {width:auto!important;width:;height:100%;padding:0 8px 0 8px;}a {color:#039}.rightpanel a {display:block;margin-top:6px;}.bold {font-weight:bold;border-bottom:2px solid #aac1de;padding:11px 0 3px 0}.noteshod {background:#fff;}.notetitle {padding:14px 0 0 14px;margin:0;width:94%!important;width:/**/99%;overflow-x:hidden;}.timesep {margin:3px 0 0 14px;font-size:12px}.mycontent {margin:5px 14px 8px 14px;width:94%!important;width:/**/99%;height:auto!important;height:/**/120px;overflow-x:hidden;word-break:break-all;min-height:120px;line-height:160%}.mycontent div,.mycontent p,.mycontent td,.mycontent font {line-height:160%}.bigfont {font-size:14px;}.nomail {border:1px solid #fff;padding:4px 11px 3px 17px;text-align:right;height:20px;line-height:18px;}.graytext {color:#a0a0a0}.qqshowbd {border:2px solid #aac1de;}</style></head><body><!-- script language="javascript">function S(id){ return document.getElementById(id);}function folderCatalog(catid){var o = S("sp_" + catid);if(o) {var dat = [["－","block"],["＋","none"]];var idx= (o.style.display=="none" ? 0 : 1);o.style.display=dat[idx][1];S("flag_" + catid).innerHTML = dat[idx][0];}}</script onclick="return folderCatalog('')" --><!-- span id="flag_">－</span --><div class="rightpanel"><a name="_23"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>git删除文件夹</b></div><div class="graytext timesep"><span>创建时间：2019年8月5日(星期一) 上午09:37</span>&nbsp;|&nbsp;分类：git </div><div id="content" class="bigfont mycontent"><note_content></note_content><div>在github上只能删除仓库,却无法删除文件夹或文件, 所以只能通过命令来解决</div><div>首先进入你的master文件夹下, Git Bash Here ,打开命令窗口</div><div>$ git --help&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # 帮助命令</div><div>$ git pull origin master&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # 将远程仓库里面的项目拉下来</div><div>$ dir&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # 查看有哪些文件夹</div><div><br  /></div><div>$ git rm -r --cached target&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # 删除target文件夹</div><div>$ git commit -m '删除了target'&nbsp; &nbsp; &nbsp; &nbsp; # 提交,添加操作说明</div><div><span style=" color: rgb(77, 77, 77) ; ; ; ; ; ; ; ; ">$ git push -u origin master&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# 将本次更改更新到github项目上去</span></div><note_content></note_content></div></div><a name="_30"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>计算机网络</b></div><div class="graytext timesep"><span>创建时间：2019年8月7日(星期三) 上午09:31</span>&nbsp;|&nbsp;分类：计算机网络 </div><div id="content" class="bigfont mycontent"><note_content></note_content><div><div style=" color: rgb(51, 51, 51); ; ; ">路由器是网络层设备，需要运行IP协议；</div><div style=" color: rgb(51, 51, 51); ; ; ">服务器和工作站的网络层也运行IP协议；</div><div style=" color: rgb(51, 51, 51); ; ; ">集线器是物理层设备，不需要运行IP协议。</div></div><div style=" color: rgb(51, 51, 51); ; ; "><br  /></div><div style=" color: rgb(51, 51, 51); ; ; "><div>集线器所有接口都属于同一个冲突域，所以所有接口是共享带宽的</div><div>交换机每个接口属于一个冲突域，所以每个接口都是独占带宽的</div><div><br  /></div><div><div>1、中继器 （Repeater）工作于OSI的第一层（物理层），</div><div>2、集线器&nbsp; 集线器也称HUB，工作在OSI七层结构的第一层物理层，属于共享型设备，。<br  />3、交换机&nbsp; 交换机顾名思义以交换为主要功能，工作在OSI第二层（数据链路层），根据MAC地址进行数据转发。<br  /></div><div>4、网桥&nbsp; &nbsp;网桥和交换机一样都是工作在OSI模型的第二层（数据链路层），可以看成是一个二层路由器（真正的路由器是工作在网络层，根据IP地址进行信包转发）。网桥可有效的将两个局域网（LAN）连起来，根据MAC地址（物理地址）来转发帧，使本地通信限制在本网段内，并转发相应的信号至另一网段，网桥通常用于联接数量不多的、同一类型的网段。&nbsp;<br  /></div><div>5、路由器&nbsp; &nbsp;工作在OSI的第三层（网络层），根据IP进行寻址转发数据包。</div></div><div><br  /></div><div><span style="">UDP协议是无面向连接的、不可靠的、无序的、无流量控制的传输层协议，UDP发送的每个数据报是记录型的数据报，所谓的记录型数据报就是接收进程可以识别接收到的数据报的记录边界。TCP协议是面向连接的、可靠的、有序的、拥有流量控制的传输层协议，它是字节流的协议，无记录边界。</span><br style=""  /><span style="">TCP和DUP都处于网络层（NETWORK LAYER）之上，都是传输层协议，功能都属于保证网络层数据的传输。双方的通信无论是用TCP还是DUP都是要开放端口的。</span></div><div><span style="">UDP并不提供</span><a class="baidu-highlight" href="https://www.baidu.com/s?wd=%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6&amp;tn=SE_PcZhidaonwhc_ngpagmjz&amp;rsv_dl=gh_pc_zhidao" target="_blank" style=" text-decoration-line: none; color: rgb(37, 187, 155); ; ; ">流量控制</a><span style="">和差错恢复功能（即：重传机制）</span></div><div><span style=""><br  /></span></div><div><div style="">A：&nbsp;HTTP（超文本传输协议）是一个基于请求与响应模式的、无状态的、应用层的协议。</div><div style="">B：&nbsp;文件传输协议FTP、电子邮件传输协议SMTP、域名系统服务DNS、HTTP协议等都同是应用层协议。</div><div style="">C：HTTP协议&nbsp;状态代码有三位数字组成，第一个数字定义了响应的类别，且有五种可能取值：</div><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1xx：指示信息--表示请求已接收，继续处理</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2xx：成功--表示请求已被成功接收、理解、接受</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3xx：重定向--要完成请求必须进行更进一步的操作</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4xx：客户端错误--请求有语法错误或请求无法实现</span><span style=""></span><br style=""  /><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5xx：服务器端错误--服务器未能实现合法的请求</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;常见状态代码、状态描述、说明：</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200 OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //客户端请求成功</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;400 Bad Request&nbsp; //客户端请求有语法错误，不能被服务器所理解</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用&nbsp;</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;403 Forbidden&nbsp; //服务器收到请求，但是拒绝提供服务</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;404 Not Found&nbsp; //请求资源不存在，eg：输入了错误的URL</span><span style=""></span><br style=""  /><span style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;500 Internal Server Error //服务器发生不可预期的错误</span><span style=""></span><br style=""  /><div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;503 Server Unavailable&nbsp; //服务器当前不能处理客户端的请求，一段时间后可能恢复正常</div><div style="">D：&nbsp;<span style="color: rgb(102, 102, 102);">HTTP是应用层协议，TCP，UDP是传输层协议</span></div></div><div style=""><span style="color: rgb(102, 102, 102);"><br  /></span></div><div style=""><span style=" box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-weight: 700; overflow-wrap: break-word; color: rgb(77, 77, 77) ; ; ; ; ; ; ; ; ; ">如果说ARP协议是用来将IP地址转换为MAC地址，那么DNS协议则是用来将域名转换为IP地址（也可以将IP地址转换为相应的域名地址）。</span></div><div style=""><span style=" box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-weight: 700; overflow-wrap: break-word; color: rgb(77, 77, 77) ; ; ; ; ; ; ; ; ; "><h1 class="title-article" style="box-sizing: inherit; outline: 0px; margin: 0.67em 0px; padding: 0px; font-size: 24px; overflow-wrap: break-word; color: rgba(0, 0, 0, 0.75);">DNS（域名解析协议）</h1></span></div></div><note_content></note_content></div></div><a name="_27"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>android Kernel用哪个config文件</b></div><div class="graytext timesep"><span>创建时间：2019年8月6日(星期二) 中午11:02</span>&nbsp;|&nbsp;分类：linux驱动开发 </div><div id="content" class="bigfont mycontent"><note_content></note_content><div class="postTitle" style=" padding-left: 3px; font-weight: bolder; font-size: 13px; padding-bottom: 3px; padding-top: 3px; border-bottom: 1px dashed rgb(110, 139, 222); background-color: rgb(214, 223, 247) ; ; ; ; ; "><a id="cb_post_title_url" href="https://www.cnblogs.com/steadfast/articles/5881998.html" style="color: navy; text-decoration-line: none;">android Kernel用哪个config文件</a></div><div class="postText" style=" padding: 1px 10px 5px; font-size: 13px; background-color: rgb(245, 245, 245); margin-top: 10px; margin-bottom: 10px; line-height: 1.8 ; ; ; ; ; "><div id="cnblogs_post_body" class="blogpost-body" style="margin-bottom: 20px; word-break: break-word;"><p style="margin: 10px auto;">查看device/qcom/msm8953_64/AndroidBoard.mk</p><p style="margin: 10px auto;">ifeq ($(KERNEL_DEFCONFIG),)<br  />&nbsp;&nbsp;&nbsp; ifeq ($(TARGET_BUILD_VARIANT),user)<br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KERNEL_DEFCONFIG :=&nbsp;<span style="line-height: 1.8; background-color: rgb(255, 204, 153);">msmcortex-perf_defconfig</span><br  />&nbsp;&nbsp;&nbsp; else<br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KERNEL_DEFCONFIG :=&nbsp;<span style="line-height: 1.8; background-color: rgb(255, 204, 153);">msmcortex_defconfig</span><br  />&nbsp;&nbsp;&nbsp; endif<br  />endif</p></div></div><note_content></note_content></div></div><a name="_26"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>预处理指令</b></div><div class="graytext timesep"><span>创建时间：2019年8月6日(星期二) 上午09:52</span>&nbsp;|&nbsp;分类：linux驱动开发 </div><div id="content" class="bigfont mycontent"><note_content></note_content><h1 class="postTitle" style=" margin: 0px 0px 10px; padding: 0px 0px 0px 5px; font-size: 15.6px; border: 0px; float: left; width: 932px; clear: both; line-height: 1.5 ; ; ; "><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/zi-xing/p/4550246.html" style="margin: 0px 0px 0px 30px; padding: 0px; outline: none; color: rgb(15, 54, 71); text-decoration-line: none; transition: all 0.4s linear 0s;">C/C++预处理指令#define,#ifdef,#ifndef,#endif…</a></h1><div class="clear" style=" margin: 0px; padding: 0px; clear: both ; ; ; ; "></div><div class="postBody" style=" margin: 0px; padding: 0px; line-height: 1.7 ; ; ; "><div id="cnblogs_post_body" class="blogpost-body" style="margin: 0px 0px 20px; padding: 0px; word-break: break-word;"><p style="margin: 10px auto; padding: 0px; text-indent: 2em;">本文主要记录了C/C++预处理指令，常见的预处理指令如下：</p><ol style="margin: 0px; padding: 0px 0px 0px 40px;"><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#空指令，无任何效果</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#include包含一个源代码文件</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#define定义宏</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#undef取消已定义的宏</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#if如果给定条件为真，则编译下面代码</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#ifdef如果宏已经定义，则编译下面代码</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#ifndef如果宏没有定义，则编译下面代码</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#elif如果前面的#if给定条件不为真，当前条件为真，则编译下面代码</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#endif结束一个#if……#else条件编译块</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">#error停止编译并显示错误信息</li><li style="margin: 0px 0px 1em; padding: 0px; list-style: decimal;">什么是预处理指令?<p style="margin: 10px auto; padding: 0px; text-indent: 2em;">预处理指令是以#号开头的代码行。#号必须是该行除了任何空白字符外的第一个字符。#后是指令关键字，在关键字和#号之间允许存在任意个数的空白字符。整行语句构成了一条预处理指令，该指令将在编译器进行编译之前对源代码做某些转换。</p><p style="margin: 10px auto; padding: 0px; text-indent: 2em;">以前没有在意的学者注意了,预处理指令是在编译器进行编译之前进行的操作.预处理过程扫描源代码，对其进行初步的转换，产生新的源代码提供给编译器。可见预处理过程先于编译器对源代码进行处理。在很多编程语言中，并没有任何内在的机制来完成如下一些功能：<span style="margin: 0px; padding: 0px; color: rgb(75, 172, 198);">在编译时包含其他源文件、定义宏、根据条件决定编译时是否包含某些代码(防止重复包含某些文件)。要完成这些工作，就需要使用预处理程序。</span>尽管在目前绝大多数编译器都包含了预处理程序，但通常认为它们是独立于编译器的。预处理过程读入源代码，检查包含预处理指令的语句和宏定义，并对源代码进行响应的转换。预处理过程还会删除程序中的注释和多余的空白字符。<br  /></p></li></ol></div></div><note_content></note_content></div></div><a name="_19"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>笔记</b></div><div class="graytext timesep"><span>创建时间：2019年7月31日(星期三) 晚上06:46</span>&nbsp;|&nbsp;分类：linux驱动开发 </div><div id="content" class="bigfont mycontent"><note_content></note_content><style type="text/css">.qmbox p { margin-bottom: 0.1in a:link {}
+</style>
+
+
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">常用命令：</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">id address <font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">查看主机的</span></font></font>IP<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">地址</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">adb kill-server</p>
+<p style="margin-bottom: 0in; line-height: 100%">adb start-server</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">1.<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">如何理解</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">整编：</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">source
+build/envsetup.sh</p>
+<p style="margin-bottom: 0in; line-height: 100%">lunch 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">(783userdebug 59)59</p>
+<p style="margin-bottom: 0in; line-height: 100%">make -j8(8<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">个线程）</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">手机有很多的部件模块，我们主要研究</span></font></font>Kernel<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">（</span></font></font>drivers<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">等）→</span></font></font>boot.img(<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">可执行文件）</span></font></font>-&gt;<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">刷机（把</span></font></font>img<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">文件写入分区）（有一个</span></font></font>xml<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">文档可以看放在那个分区），每个部件模块写入不同的分区。</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">单编：</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">Make bootimage
+-j32(<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">单编我们正在学习的模块）</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">2.<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">如何刷机</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">2.1 adb<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">命令学习</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">2.2 fastboot<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">命令学习</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">adb devices 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">sudo reboot
+bootloader 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">sudo fastboot flash
+boot .../.../.../...img</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">lsusb //<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">查看</span></font></font>usb<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">连接设备</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">fastboot devices</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">sudo fastboot reboot
+<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">退出刷机</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">adb shell</p>
+<p style="margin-bottom: 0in; line-height: 100%"> su</p>
+<p style="margin-bottom: 0in; line-height: 100%">reboot bootloader</p>
+<p style="margin-bottom: 0in; line-height: 100%">sudo fastboot flash
+boot .../.../.../...img</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">adb shell</p>
+<p style="margin-bottom: 0in; line-height: 100%">su dmesg</p>
+<p style="margin-bottom: 0in; line-height: 100%">//boot</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">cd sys/......./led</p>
+<p style="margin-bottom: 0in; line-height: 100%">cat …</p>
+<p style="margin-bottom: 0in; line-height: 100%">echo 1 &gt; …</p>
+<p style="margin-bottom: 0in; line-height: 100%">cat proc/kmsg</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">3.<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">如何找到</span></font></font>sysfs<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">方法创建的文件</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">find -name
+a.txt(<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">按指定的文件名查找文件）</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">grep -r  “.....”
+<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">递归查找文件</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">//<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">查看通过命令控制板机的文件目录说明</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">/LA.UM.7.2.r1/kernel/msm-4.4/Documentation/gpio$
+vim sysfs.txt 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">4.scp<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">（</span></font></font>secure
+copy) <font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">命令学习</span></font></font>:<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">本地和远程的文件传输和连接</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">4.0<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">从本地复制文件到远程</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">scp local_file 
+<a href="mailto:remote_name@remote_ip">remote_name@remote_ip</a>:remote_folder/remote_file</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">从远程复制文件到本地</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">scp
+<a href="mailto:remote_name@remote_ip">emote_name@remote_ip</a>:remote_folder/remote_file
+local_file</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">4.1<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">如何连接另外的电脑和下载文件</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">ssh
+root@192.168.6.8<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">连接</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">输入密码</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">exit<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">退出</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">5.<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">如何增加新的函数，并用</span></font></font>dmesg<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">打印出来，并找到正确的文件位置</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">demsg | more<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">（</span></font></font>less<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">）
+单页显示</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">demsg | head  -20
+<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">显示前</span></font></font>20<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">行信息</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">dmesg | tail 
+-20<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">查看尾部后面</span></font></font>20<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">行信息</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">demsg | grep -i usb
+<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">忽略大小写</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">5.0
+attribute_atrr<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">的学习，创建用户和内核的命令接口</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">5.0.1<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">创建</span></font></font>xxx_show<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">和</span></font></font>xxx_store<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">两个函数</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">//reg <font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">是</span></font></font>name<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">，这个是自己定义</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">static
+DEVICE_ATTR(reg, S_IWUSR | S_IRUGO, aw9106_reg_show,
+aw9106_reg_store);</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">5.1
+<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">创建函数</span></font></font>suspend<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">和</span></font></font>resume,<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">暂时不管里面有什么内容</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">5.2 <font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">在下面对应添加</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">//<font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">放入其中，系统就可以调用</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%">static struct
+i2c_driver aw9106_i2c_driver = {</p>
+<p style="margin-bottom: 0in; line-height: 100%">    .driver = {</p>
+<p style="margin-bottom: 0in; line-height: 100%">        .name =
+AW9106_I2C_NAME,</p>
+<p style="margin-bottom: 0in; line-height: 100%">        .owner =
+THIS_MODULE,</p>
+<p style="margin-bottom: 0in; line-height: 100%">       
+.of_match_table = of_match_ptr(aw9106_dt_match),</p>
+<p style="margin-bottom: 0in; line-height: 100%">    },</p>
+<p style="margin-bottom: 0in; line-height: 100%">    .probe =
+aw9106_i2c_probe,</p>
+<p style="margin-bottom: 0in; line-height: 100%">    .remove =
+aw9106_i2c_remove,</p>
+<p style="margin-bottom: 0in; line-height: 100%">    .id_table =
+aw9106_i2c_id,</p>
+<p style="margin-bottom: 0in; line-height: 100%">};</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br  />
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">5.3 <font face="Noto Sans CJK SC Regular"><font style="font-size: 10pt" size="2"><span lang="zh-CN">修改结构体
+</span></font></font>struct i2c_driver</p>A<note_content></note_content></div></div><a name="_25"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>linux学习</b></div><div class="graytext timesep"><span>创建时间：2019年8月6日(星期二) 上午09:45</span>&nbsp;|&nbsp;分类：linux学习 </div><div id="content" class="bigfont mycontent"><note_content></note_content><pre class="best-text mb-10" style=" margin-top: 0.8em; margin-bottom: 0.8em; padding: 10px 0px 10px 10px; position: relative; border-left: 2px solid rgb(26, 188, 156); background: rgb(250, 250, 250); word-break: break-word; ; ; ; ">所谓<a href="https://www.baidu.com/s?wd=%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Y3mWPWuH-9nHTYnHNbrjcs0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPWcsPjfdPjDvn10zn1TYrHTz" target="_blank" style="text-decoration-line: none; color: rgb(37, 187, 155);">系统调用</a>，就是内核提供的、功能十分强大的一系列的函数。这些<a href="https://www.baidu.com/s?wd=%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Y3mWPWuH-9nHTYnHNbrjcs0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPWcsPjfdPjDvn10zn1TYrHTz" target="_blank" style="text-decoration-line: none; color: rgb(37, 187, 155);">系统调用</a>是在内核中实现的，再通过一定的方式把<a href="https://www.baidu.com/s?wd=%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Y3mWPWuH-9nHTYnHNbrjcs0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPWcsPjfdPjDvn10zn1TYrHTz" target="_blank" style="text-decoration-line: none; color: rgb(37, 187, 155);">系统调用</a>给用户，一般都通过门(gate)陷入(trap)实现。系统调用是用户程序和内核交互的接口。</pre><pre class="best-text mb-10" style=" margin-top: 0.8em; margin-bottom: 0.8em; padding: 10px 0px 10px 10px; position: relative; border-left: 2px solid rgb(26, 188, 156); background: rgb(250, 250, 250); word-break: break-word; ; ; ; "><span style="   ; ;  ">若一台计算机的内存为128MB，则交换分区的大小通常是 ：</span>在内存小于2G的情况下，交换分区应为内存的2倍，超过2G的话，交换分区为物理内存加上2G</pre><pre class="best-text mb-10" style=" margin-top: 0.8em; margin-bottom: 0.8em; padding: 10px 0px 10px 10px; position: relative; border-left: 2px solid rgb(26, 188, 156); background: rgb(250, 250, 250); word-break: break-word; ; ; ; "><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">UNIX中有如下的通信方式：</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">1)&nbsp;文件和记录锁定。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">为避免两个进程间同时要求访问同一共享资源而引起访问和操作的混乱，在进程对</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">共享资源进行访问前必须对其进行锁定，该进程访问完后再释放。这是UNIX为共享</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">资源提供的互斥性保障。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">&nbsp;&nbsp;<span style="font-size: 12px; line-height: 1.5;">2</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">）管道。</span></p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">管道一般用于两个不同进程之间的通信。当一个进程创建一个管道，并调用fork创</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">建自己的一个子进程后，父进程关闭读管道端，子进程关闭写管道端，这样 提供了</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">两个进程之间数据流动的一种方式。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">&nbsp;&nbsp;<span style="font-size: 12px; line-height: 1.5;">3</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">）</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">FIFO</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">。</span></p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">FIFO是一种先进先出的队列。它类似于一个管道，只允许数据的单向流动。每个</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">FIFO都有一个名字，允许不相关的进程访问同一个FIFO。因此也成为命名管。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">&nbsp;4）消息队列。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">UNIX下不同进程之间可实现共享资源的一种机制；UNIX允许不同进程将格式化的数</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">据流以消息形式发送给任意</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">进程。对消息队列具有操作权限的进程都可以使用msget完成对消息队列的操作控制</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">。通过使用消息类型，进程可以按任何顺序读消息，或为消息安排优先级顺序。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">&nbsp;&nbsp;<span style="font-size: 12px; line-height: 1.5;">5</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">）信号灯。</span></p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">作为进程间通讯的一种方法，它不是用于交换大批数据，而用于多进程之间的同步</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">（协调对共享存储段的存取）。</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">&nbsp;&nbsp;<span style="font-size: 12px; line-height: 1.5;">6</span>&nbsp;<span style="font-size: 12px; line-height: 1.5;">）共享内存。</span></p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; ">通过信号灯实现存储共享（类似“红灯停、绿灯行”）</p><p class="MsoNormal" style=" margin: 0px; padding: 0px; line-height: 1.4em; ; ; ; ; "><br  /></p><p style=" margin: 0px; padding: 0px; line-height: 1.4em; color: rgb(51, 51, 51); ; ; ; ; ">在Linux系统中,一切设备都看作文件。而每打开一个文件,就有一个代表该打开文件的文件描述符。程序启动时默认打开三个I/O设备文件:标准输入文件stdin,标准输出文件stdout,标准错误输出文件stderr,分别得到文件描述符0,1,2。</p><p style=" margin: 0px; padding: 0px; line-height: 1.4em; color: rgb(51, 51, 51); ; ; ; ; ">文件描述符0：标准输入文件stdin</p><p style=" margin: 0px; padding: 0px; line-height: 1.4em; color: rgb(51, 51, 51); ; ; ; ; ">文件描述符1：标准输出文件stdout</p><p style=" margin: 0px; padding: 0px; line-height: 1.4em; color: rgb(51, 51, 51); ; ; ; ; ">文件描述符2：标准错误输出文件stderr</p></pre><note_content></note_content></div></div><a name="_29"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>网站</b></div><div class="graytext timesep"><span>创建时间：2019年8月6日(星期二) 晚上06:23</span>&nbsp;|&nbsp;分类：帐号 </div><div id="content" class="bigfont mycontent"><note_content></note_content><div>github liyingfei142118 liyingfei103</div><div>博客园 liyingfei103 LYF103&amp;&amp;</div><div><br  /></div><div><pre id="empty-setup-new-repo-echo" class="f5" style=" box-sizing: border-box; ; ; ; ; ; "><span class="user-select-contain" style="box-sizing: border-box;">git init</span>
+<span class="user-select-contain" style="box-sizing: border-box;">git add README.md</span>
+<span class="user-select-contain" style="box-sizing: border-box;">git commit -m "first commit"</span>
+<span class="user-select-contain" style="box-sizing: border-box;">git remote add origin <span class="js-git-clone-help-text" style="box-sizing: border-box;">git@github.com:liyingfei142118/MyPersonal.git</span></span>
+<span class="user-select-contain mb-0" style="box-sizing: border-box; margin-bottom: 0px !important;">git push -u origin master</span></pre></div><note_content></note_content></div></div><a name="_53"></a><div class="qqshowbd"><div class="notetitle bigfont"><b>账本</b></div><div class="graytext timesep"><span>创建时间：2019年9月5日(星期四) 上午10:06</span>&nbsp;|&nbsp;分类：2019 </div><div id="content" class="bigfont mycontent"><note_content></note_content><div><div>4000+9000 = 11000</div><div>+3600(8月工资)</div><div>+121</div><div>+200(买书)</div><div>+2400</div><div>-816.43</div><div><br  /></div><div><br  /></div><div>15957&nbsp; - 4000 -9000&nbsp; = 2957</div><div>15957 - 4000 - 8000 = 3957</div><div>3957 + 200(买书) + 121 (招商银行) + 400 (现金) = 4678</div><div>两张饭卡各100 = 200</div><div>后面报销100医疗费</div></div><note_content></note_content></div></div></div>
